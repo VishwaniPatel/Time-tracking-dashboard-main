@@ -1,80 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-wrapper flex-center h-100 p-40">
+      <div class="dashboard-wrapper">
+      <div class="profile border-radius-12">
+        <div class="profile-card border-radius-12 p-40 ">
+          <div class="profile-wrapper mb-30">
+            <img src="assets/images/image-jeremy.png" alt="Profile image" />
+          </div>
+          <span class="fs-12">Report for</span>
+          <p class="profile-name mb-60">Jeremy Robson</p>
+        </div>
+        <div class="filter p-40">
+          <div class="mb-8">Daily</div>
+          <div class="mb-8">Weekly</div>
+          <div>Monthly</div>
+        </div>
+      </div>
 
-  Report for
-  Jeremy Robson
+          <div class="dashboard-card work">
+            <div class="card-details p-16">
+              <div class="d-flex justify-content-between">
+                <span>Work</span>
+                <span>
+                  <img src="assets/images/icon-ellipsis.svg" alt="" />
+                </span>
+              </div>
+              <div>
+                <p class="current"></p>
+                <p class="previous"></p>
+              </div>
+            </div>
+          </div>
 
-  Daily
-  Weekly
-  Monthly
+          <div class="dashboard-card play ">
+            <div class="card-details  p-16">
+              <div class="d-flex justify-content-between">
+                <span>Play</span>
+                <span>
+                  <img src="assets/images/icon-ellipsis.svg" alt="" />
+                </span>
+              </div>
+              <div>
+                <p class="current"></p>
+                <p class="previous"></p>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-card study ">
+            <div class="card-details  p-16">
+              <div class="d-flex justify-content-between">
+                <span>Study</span>
+                <span>
+                  <img src="assets/images/icon-ellipsis.svg" alt="" />
+                </span>
+              </div>
+              <div>
+                <p class="current"></p>
+                <p class="previous"></p>
+              </div>
+            </div>
+          </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+          <div class="dashboard-card exercise ">
+            <div class="card-details  p-16">
+              <div class="d-flex justify-content-between">
+                <span>Exercise</span>
+                <span>
+                  <img src="assets/images/icon-ellipsis.svg" alt="" />
+                </span>
+              </div>
+              <div>
+                <p class="current"></p>
+                <p class="previous"></p>
+              </div>
+            </div>
+          </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+          <div class="dashboard-card social ">
+            <div class="card-details  p-16">
+              <div class="d-flex justify-content-between">
+                <span>Social</span>
+                <span>
+                  <img src="assets/images/icon-ellipsis.svg" alt="" />
+                </span>
+              </div>
+              <div>
+                <p class="current"></p>
+                <p class="previous"></p>
+              </div>
+            </div>
+          </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          <div class="dashboard-card self-care ">
+            <div class="card-details  p-16">
+              <div class="d-flex justify-content-between">
+                <span>Self Care</span>
+                <span>
+                  <img src="assets/images/icon-ellipsis.svg" alt="" />
+                </span>
+              </div>
+              <div>
+                <p class="current"></p>
+                <p class="previous"></p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    
   </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
