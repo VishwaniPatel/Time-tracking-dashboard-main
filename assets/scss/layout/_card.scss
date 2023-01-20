@@ -1,78 +1,139 @@
-.dashboard-wrapper{
+.dashboard-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1.5rem;
-    row-gap: 1.5rem;
+  row-gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-.profile{
+.profile {
   grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column: 1;
-    background-color: $dark-blue;
-    .filter{
-        font-weight: 300;
-        font-size: 14px;
+  grid-row-end: 3;
+  grid-column: 1;
+  background-color: $dark-blue;
+  .filter {
+    font-weight: 300;
+    font-size: 14px;
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px;
+      font-size: 12px;
     }
+  }
 }
-.profile-card{
-    background-color: $card-bg;
-    .profile-wrapper{
-        height: 60px;
-        width: 60px;
-        border-radius: 50px;
-        overflow: hidden;
-        border: 2px solid #fff;
-        & img{
-            height: 100%;
-            width: 100%;
-        }
+.profile-card {
+  background-color: $card-bg;
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .profile-wrapper {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 2px solid #fff;
+    & img {
+      height: 100%;
+      width: 100%;
     }
-    .profile-name{
-        font-size: 28px;
-        font-weight: 300;
+    @media (max-width: 768px) {
+      margin-bottom: 0px;
+      height: 50px;
+      width: 50px;
+      margin-right: 12px;
     }
-    
+  }
+  .profile-name {
+    font-size: 28px;
+    font-weight: 300;
+    @media (max-width: 768px) {
+      margin-bottom: 0px;
+      font-size: 20px;
+    }
+  }
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
 
-.dashboard-card {
+  &-header {
+    height: 120px;
+    border-radius: 12px;
     background-repeat: no-repeat;
-    background-position: 90% 0% ;
-    position: relative;
-    border-radius: 12px;
-
+    background-position: 90% 0%;
+    @media (max-width: 768px) {
+      height: 44px;
+      background-size: 50px;
+    }
   }
-  .card-details{
-
-    border-radius: 12px;
-    position: absolute;
-    top: 50px;
-    background-color: $dark-blue;
-    height: 100%;
+  &-details {
     width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    margin-top: -20px;
+    background-color: $dark-blue;
+
+    @media (max-width: 768px) {
+      height: 80px;
+      .categories {
+        font-size: 12px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .duration {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .current {
+    margin-top: 25px;
+    font-size: 40px;
+    font-weight: 300;
+    @media (max-width: 768px) {
+      font-size: 20px;
+      margin-top: 4px;
+    }
+  }
+  .previous {
+    margin-top: 12px;
+    font-size: 12px;
+    color: $pale-blue;
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
+  }
 }
-.work{
-    
-    background-color: #fe8968;
-    background-image: url("../../../assets/images/icon-work.svg");
+.title {
+  color: $pale-blue;
 }
-  .play{
-    background-color: #59c2e3;
-    background-image: url("../../../assets/images/icon-play.svg");
-  }
-  .study{
-    background-color: #fd607f;
-    background-image: url("../../../assets/images/icon-study.svg");
-  }
-  .exercise{
-    background-color: #51ce88;
-    background-image: url("../../../assets/images/icon-exercise.svg");
-  }
-  .social{
-    background-color: #723ece;
-    background-image: url("../../../assets/images/icon-social.svg");
-  }
-  .self-care{
-    background-color: #f1c565;
-    background-image: url("../../../assets/images/icon-self-care.svg");
-  }
+.work {
+  background-color: #fe8968;
+  background-image: url("../../../assets/images/icon-work.svg");
+}
+.play {
+  background-color: #59c2e3;
+  background-image: url("../../../assets/images/icon-play.svg");
+}
+.study {
+  background-color: #fd607f;
+  background-image: url("../../../assets/images/icon-study.svg");
+}
+.exercise {
+  background-color: #51ce88;
+  background-image: url("../../../assets/images/icon-exercise.svg");
+}
+.social {
+  background-color: #723ece;
+  background-image: url("../../../assets/images/icon-social.svg");
+}
+.self-care {
+  background-color: #f1c565;
+  background-image: url("../../../assets/images/icon-self-care.svg");
+}
