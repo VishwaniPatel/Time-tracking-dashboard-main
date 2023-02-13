@@ -27,9 +27,12 @@
   </head>
   <body>
     <div class="main-wrapper flex-center h-100 p-40">
+      <!-- Dashboard wrapper Start -->
       <div class="dashboard-wrapper">
+        <!-- Profile wrapper Start -->
       <div class="profile border-radius-12">
         <div class="profile-card border-radius-12 p-40 ">
+          <!-- Profile Image -->
           <div class="profile-wrapper mb-30">
             <img src="assets/images/image-jeremy.png" alt="Profile image" />
           </div>
@@ -38,13 +41,24 @@
           <p class="profile-name mb-60">Jeremy Robson</p>
         </div>
         </div>
+        <!-- Options to filter data -->
         <div class="filter p-40">
-          <div class="mb-8">Daily</div>
-          <div class="mb-8">Weekly</div>
-          <div>Monthly</div>
+          <ul>
+            <li class="mb-8">
+                <a class="option" id="daily" >Daily</a>
+            </li>
+            <li  class="mb-8" >
+              <a class="option" id="weekly" >Weekly</a>
+            </li>
+            <li>
+              <a class="option" id="monthly">Monthly</a>
+            </li>
+          </ul>
         </div>
       </div>
+      <!-- Profile wrapper End -->
 
+        <!-- Duration of Work Start -->
           <div class="card">
             <div class="card-header work"></div>
             <div class="card-details p-16">
@@ -55,12 +69,16 @@
                 </span>
               </div>
               <div class="duration">
-                <p class="current">32hrs</p>
-                <p class="previous">Last week 36hrs</p>
+                <!-- Shows current data -->
+                <p class="current"></p>
+                <!-- Show previous data -->
+                <p class="previous"></p>
               </div>
             </div>
           </div>
+<!-- Duration of Work End -->
 
+<!-- Duration of Play Start -->
           <div class="card">
             <div class="card-header  play "></div>
             <div class="card-details  p-16">
@@ -71,11 +89,16 @@
                 </span>
               </div>
               <div class="duration">
-                <p class="current">10hrs</p>
-                <p class="previous">Last week 8hrs</p>
+                <!-- Shows current data -->
+                <p class="current"></p>
+                <!-- Show previous data -->
+                <p class="previous"></p>
               </div>
             </div>
           </div>
+          <!-- Duration Play End -->
+
+          <!-- Duration of Study Start -->
           <div class="card">
             <div class="card-header  study "></div>
             <div class="card-details  p-16">
@@ -86,12 +109,16 @@
                 </span>
               </div>
               <div class="duration">
-                <p class="current">4hrs</p>
-                <p class="previous">Last week 7hrs</p>
+                <!-- Shows current data -->
+                <p class="current"></p>
+                <!-- Show previous data -->
+                <p class="previous"></p>
               </div>
             </div>
           </div>
+          <!-- Duration of Study End -->
 
+          <!-- Duration of Exercise Start -->
           <div class="card ">
             <div class="card-header exercise"></div>
             <div class="card-details  p-16">
@@ -102,12 +129,16 @@
                 </span>
               </div>
               <div class="duration">
-                <p class="current">4hrs</p>
-                <p class="previous">Last week 5hrs</p>
+                <!-- Shows current data -->
+                <p class="current"></p>
+                <!-- Show previous data -->
+                <p class="previous"></p>
               </div>
             </div>
           </div>
+          <!-- Duration of Exercise End -->
 
+          <!-- Duration of Social Start -->
           <div class="card ">
             <div class="card-header  social"></div>
             <div class="card-details  p-16">
@@ -118,28 +149,36 @@
                 </span>
               </div>
               <div class="duration">
-                <p class="current">5hrs</p>
-                <p class="previous">Last week 10hrs</p>
+                <!-- Shows current data -->
+                <p class="current"></p>
+                <!-- Show previous data -->
+                <p class="previous"></p>
               </div>
             </div>
           </div>
+          <!-- Duration of Social End -->
 
+          <!-- Duration of Self-care Start -->
           <div class="card ">
             <div class="card-header  self-care"></div>
             <div class="card-details  p-16">
               <div class="d-flex justify-content-between">
                 <span class="categories">Self Care</span>
                 <span>
-                  <img src="assets/images/icon-ellipsis.svg" alt="" />
+                  <img src="assets/images/icon-ellipsis.svg" alt="No image found" />
                 </span>
               </div>
               <div class="duration">
-                <p class="current">2hrs</p>
-                <p class="previous">Last week 2hrs</p>
+                <!-- Shows current data -->
+                <p class="current"></p>
+                <!-- Show previous data -->
+                <p class="previous"></p>
               </div>
             </div>
           </div>
+          <!-- Duration of Self-care End -->
       </div>
+      <!-- Dashboard wrapper End -->
     </div>
     
   </div>
@@ -149,5 +188,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Vishwani Patel</a>.
     </div>
+    <!-- Added JS file -->
+    <script src="assets/js/index.js"></script>
   </body>
 </html>

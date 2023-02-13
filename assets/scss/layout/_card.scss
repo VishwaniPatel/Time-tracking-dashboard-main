@@ -1,19 +1,25 @@
+// Adding style for background-wrapper
 .dashboard-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1.5rem;
   row-gap: 1.5rem;
 
+  // Change layout in smaller size screen
   @media (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+// Adding style for profile data
 .profile {
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column: 1;
   background-color: $dark-blue;
   .filter {
+    cursor: pointer;
+    color: $pale-blue;
     font-weight: 300;
     font-size: 14px;
     @media (max-width: 768px) {
@@ -48,6 +54,7 @@
       margin-right: 12px;
     }
   }
+
   .profile-name {
     font-size: 28px;
     font-weight: 300;
@@ -58,6 +65,7 @@
   }
 }
 
+// Adding style for cards
 .card {
   display: flex;
   flex-direction: column;
@@ -113,6 +121,8 @@
 .title {
   color: $pale-blue;
 }
+
+// Adding background images of card
 .work {
   background-color: #fe8968;
   background-image: url("../../../assets/images/icon-work.svg");
